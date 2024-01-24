@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        function topla(a, b) {
+            return a + b;
+        }
+
+
+        var sonuc = topla(10, 20);
+        console.log(sonuc);
+
+        console.log(topla(10123, 12312));
+
+
+        var now = 2024;
+
+        function yashesapla(yas) {
+            return now - yas;
+        }
+
+        var ahmet = yashesapla(1992);
+        console.log(ahmet)
+
+
+        function fac(sayi) {
+
+            var sonuc = 1;
+
+
+
+            for (let i = 1; i <= sayi; i++) {
+
+                sonuc *= i;
+
+            }
+            console.log(sonuc)
+        }
+
+        fac(5);
+
+
+
+        var modeller = ["mazda", "reno", "tata"];
+
+        function yazdir(dizi) {
+            dizi.forEach(function (e) {
+                console.log(e);
+            });
+        }
+        yazdir(modeller);
+
+        var cumle = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.rum cum autem iusto. Totam?';
+
+        function ozet(cumle, maxKarakter) {
+
+            
+            var ozetCumle = [];
+
+            if (maxKarakter > cumle.length) {
+                return console.log(cumle)
+            } else {
+
+                var kelimeler = cumle.split(" ");
+
+                var toplamKarakter = 0;
+
+                for (var i = 0; i < kelimeler.length; i++) {
+
+                    ozetCumle.push(kelimeler[i]);
+
+                    toplamKarakter += kelimeler[i].length;
+
+                    if (toplamKarakter > maxKarakter) {
+                        break;
+                    }
+                }
+            }
+
+            return console.log(ozetCumle.join(" ") + "...");
+        }
+
+
+        ozet(cumle,16);
+
+    </script>
+</body>
+
+</html>
