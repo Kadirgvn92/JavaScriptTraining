@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:green;
+            font-size: 70px;
+            padding :10px;
+
+        }
+
+        .active {
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title" class="title">Best free stock photos in one place</h1>
+
+        <h3 id="sub-title">Search for free photos</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit 
+            repellat accusamus, rem <strong>officia</strong> rerum perferendis, veritatis quae quo nesciunt 
+            animi nam natus alias ipsum  eligendi reiciendis quis laboriosam 
+            maxime?</p>
+
+            <ul>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+
+        <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" 
+        alt="" width="700px" height="400px">
+
+        <script>
+
+
+            var header = document.getElementById('title');
+
+            header.classList.add('active');
+
+            /* header.style.color = 'green';
+            header.style.fontSize = '70px';
+            header.style.border = '2px solid navy';
+            header.style.padding = '10px'; */
+
+
+            var p = document.getElementsByTagName('p')[0];
+            p.textContent = 'Ne alaksı var kardeşim ben değiştiriyorum'
+            var ul = document.querySelector('ul');
+
+            var para = document.getElementById('sub-title');
+
+            para.innerHTML = '<strong>KKK</strong>'
+
+            console.log(p.textContent);
+            console.log(ul.textContent);
+            console.log(document.body.textContent)
+        </script>
+</body>
+</html>
